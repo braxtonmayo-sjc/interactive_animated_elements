@@ -114,7 +114,7 @@ footer {
 
 /* Glowing Egg on Hover */
 .easter-egg:hover {
-  box-shadow: 0 0 40px 10px #FF1493;
+  box-shadow: 0 0 50px 5px #FF1493;
   /*filter: drop-shadow(0 0 10px #FF1493);*/
 }
 
