@@ -84,7 +84,7 @@ footer {
 
 /* Hopping Bunny */
 .bunny img {
-  animation: hop 2s ease-in-out infinite;
+  animation: hop 1s ease-in-out infinite;
 }
 
 @keyframes hop {
