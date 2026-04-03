@@ -45,7 +45,7 @@ footer {
   border: 2px solid deeppink;
   border-radius: 12px;
   width: 250px;
-  height: 350px;
+  height: 450px;
   text-align: center;
   padding: 1rem;
   box-shadow: 0 0 15px rgba(255, 117, 24, 0.3);
@@ -84,7 +84,7 @@ footer {
 
 /* Hopping Bunny */
 .bunny img {
-  animation: hop 1s ease-in-out infinite;
+  animation: hop .5s ease-in-out infinite;
 }
 
 @keyframes hop {
@@ -114,8 +114,8 @@ footer {
 
 /* Glowing Egg on Hover */
 .easter-egg:hover {
-  /*box-shadow: 0 0 40px 10px rgba(255, 117, 24, 0.9);*/
-  filter: drop-shadow(0 0 10px #FF1493);
+  box-shadow: 0 0 40px 10px #FF1493;
+  /*filter: drop-shadow(0 0 10px #FF1493);*/
 }
 
 /* Button */
