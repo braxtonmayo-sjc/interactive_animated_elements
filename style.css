@@ -1,0 +1,141 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: darkturquoise;
+  color: #f9f4e7;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+header.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(rgb(148, 0, 211), rgb(0, 206, 209));
+  color: deeppink;
+}
+
+main {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: darkviolet;
+  font-size: 0.9rem;
+}
+
+/* Cards */
+.easter-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: gold;
+  border: 2px solid deeppink;
+  border-radius: 12px;
+  width: 250px;
+  height: 300px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 0 15px rgba(255, 117, 24, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease,
+    background-color 0.4s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* Hover Transition */
+.egg:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 0 30px rgba(255, 117, 24, 0.8);
+  background-color: darkviolet;
+}
+
+.bunny:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(255, 117, 24, 0.8);
+  background-color: darkviolet;
+}
+
+.chick:hover {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 0 30px rgba(255, 117, 24, 0.8);
+  background-color: darkviolet;
+}
+
+/* Image Animations */
+
+/* Hopping Bunny */
+.bunny img {
+  animation: hop 4s ease-in-out infinite;
+}
+
+@keyframes hop {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Jiggling Chick */
+.chick img {
+  animation: jiggle .83s infinite ease-in-out;
+}
+
+@keyframes jiggle {
+  0% { transform: translateX(0) }
+  25% { transform: translateY(-9px) }
+  35% { transform: translateY(-9px) rotate(17deg) }
+  55% { transform: translateY(-9px) rotate(-17deg) }
+  65% { transform: translateY(-9px) rotate(17deg) }
+  75% { transform: translateY(-9px) rotate(-17deg) }
+  100% { transform: translateY(0) rotate(0) }
+}
+
+/* Glowing Egg on Hover */
+.easter-egg:hover {
+  /*box-shadow: 0 0 40px 10px rgba(255, 117, 24, 0.9);*/
+  filter: drop-shadow(0 0 2px #FF1493);
+}
+
+/* Button */
+.cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.btn {
+  background-color: deeppink;
+  color: gold;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.9);
+}
